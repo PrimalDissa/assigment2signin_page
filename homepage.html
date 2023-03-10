@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+
+<h1>Welcome to the Home Page</h1>
+
+<button id="signout-button">Sign out</button>
+
+<form id="new-user-form">
+  <h3>If You Still Not Registered Please Register Using This Form</h3>
+  <label for="new-username">New Username:</label>
+  <input type="text" id="new-username" required>
+  
+  <label for="new-password">New Password:</label>
+  <input type="password" id="new-password" required>
+  
+  <button type="submit" id="create-user-button">Create user</button>
+</form>
+<script>
+
+const signoutBtn = document.getElementById("signout-button");
+
+
+signoutBtn.addEventListener("click", function() {
+  // Redirect sign in page
+  window.location.href = "signpage.html";
+});
+
+
+const newUserForm = document.getElementById("new-user-form");
+
+
+newUserForm.addEventListener("submit", function(event) {
+  event.preventDefault(); 
+
+  // new username and password input fields
+  const newUsername = document.getElementById("new-username").value;
+  const newPassword = document.getElementById("new-password").value;
+
+
+
+  // Display a success alert
+  alert(`New user "${newUsername}" created successfully!`);
+});
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

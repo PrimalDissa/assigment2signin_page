@@ -1,0 +1,64 @@
+form {
+    background-color: #a88f1d;
+    border-radius: 50px;
+    padding: 50px;
+    margin: 250px;
+    color: blue;
+    width: 50vw;
+    height: 18vh;
+    position: absolute;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+    #new-user-form{color: #5bdb11;}
+
+h1{text-align: center; color: darkred;text-decoration: underline;}
+h3{text-align: center; color: darkred;text-decoration: underline;}
+
+label{font-family: sans-serif;font-weight: bolder;font-size: large;}
+
+body{background-color: burlywood;}
+
+button{
+    border: none;
+    border-radius: 20px;
+    color: #FFFFFF;
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+input {
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+    padding: 5px;
+    width: 100%;
+  }
+  
+
+ #signbutton{background-color: #19be2f}   
+ 
+ #create-user-button{background-color: rgb(27, 39, 201);}
+
+ #signout-button{
+    background-color: red;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10%;
+  }
+  #home-button{
+    background-color: rgb(57, 138, 26);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10%;
+  }

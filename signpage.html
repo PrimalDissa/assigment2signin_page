@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>sign form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+ <h1> SIGN FORM</h1>   
+ <button id="home-button">Home</button>
+    <form id="signform">
+        <label for="username">User Name</label>
+        <input type="text" id="username" required>
+        
+
+        <label for="password">Password</label>
+        <input type="password" id="password" required><br>
+
+        <button type="submit" id="signbutton"><span>Sign In</span>
+         </button>
+    </form>
+     
+    <script>
+        const homeBtn = document.getElementById("home-button");
+
+
+homeBtn.addEventListener("click", function() {
+  // Redirect sign in page
+  window.location.href = "homepage.html";
+});
+
+
+        const form = document.getElementById("signform");
+
+
+form.addEventListener("submit", function(event) {
+  event.preventDefault(); 
+
+
+  const username = document.getElementById("username").value;
+  const password = document.getElementById("password").value;
+
+  // Check username and password correct
+  if (username === "user" && password === "password") {
+    // Redirect to  home page
+    window.location.href = "homepage.html";
+  } else {
+    //error message 
+    alert("Incorrect username or password. Please try again.");
+  }
+});
+    </script>
+   
+    
+</body>
+</html>
